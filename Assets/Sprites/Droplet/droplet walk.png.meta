@@ -1,0 +1,788 @@
+fileFormatVersion: 2
+guid: ce6a1ad3dd60546358d7b0ac2051379a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2645156692075155430
+    second: droplet walk_0
+  - first:
+      213: -8875010241330570314
+    second: droplet walk_1
+  - first:
+      213: -7523654518393002958
+    second: droplet walk_2
+  - first:
+      213: 4851372213670529489
+    second: droplet walk_3
+  - first:
+      213: -2319624046751894620
+    second: droplet walk_4
+  - first:
+      213: 7803422851982817750
+    second: droplet walk_5
+  - first:
+      213: -1489578434270794163
+    second: droplet walk_6
+  - first:
+      213: 61626510284994657
+    second: droplet walk_7
+  - first:
+      213: -4454149142360238919
+    second: droplet walk_8
+  - first:
+      213: -7023763421352135506
+    second: droplet walk_9
+  - first:
+      213: 8858704096682443226
+    second: droplet walk_10
+  - first:
+      213: -435724827704241060
+    second: droplet walk_11
+  - first:
+      213: -7213805968761334884
+    second: droplet walk_12
+  - first:
+      213: 3203780180627137848
+    second: droplet walk_13
+  - first:
+      213: -8837349879458503247
+    second: droplet walk_14
+  - first:
+      213: 8851043911982260120
+    second: droplet walk_15
+  - first:
+      213: -7871910338194754780
+    second: droplet walk_16
+  - first:
+      213: 62694102266956386
+    second: droplet walk_17
+  - first:
+      213: -984098742656158104
+    second: droplet walk_18
+  - first:
+      213: 6290048948147871077
+    second: droplet walk_19
+  - first:
+      213: 4030639540243484379
+    second: droplet walk_20
+  - first:
+      213: 3982296165940635138
+    second: droplet walk_21
+  - first:
+      213: -8979872892008787550
+    second: droplet walk_22
+  - first:
+      213: -8068640886231692394
+    second: droplet walk_23
+  - first:
+      213: -3410267398556093174
+    second: droplet walk_24
+  - first:
+      213: -2177519245965343797
+    second: droplet walk_25
+  - first:
+      213: -1596377193936729557
+    second: droplet walk_26
+  - first:
+      213: 1192825717901163859
+    second: droplet walk_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: droplet walk_0
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2494
+        width: 106
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10fc91d0048a4bd0800000000000000
+      internalID: -2645156692075155430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_1
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 2494
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb99831531a5d480800000000000000
+      internalID: -8875010241330570314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_2
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 2493
+        width: 104
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2342c6ad31c969790800000000000000
+      internalID: -7523654518393002958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_3
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 2493
+        width: 104
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9480d1359835340800000000000000
+      internalID: 4851372213670529489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_4
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 2493
+        width: 105
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a336e8283a0fcfd0800000000000000
+      internalID: -2319624046751894620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_5
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 2012
+        width: 104
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9f9945db35b4c60800000000000000
+      internalID: 7803422851982817750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_6
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 2012
+        width: 105
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ee4306e44f35be0800000000000000
+      internalID: -1489578434270794163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_7
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 2012
+        width: 105
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168b84e0cf0fad000800000000000000
+      internalID: 61626510284994657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_8
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 2012
+        width: 105
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4d10144feaf22c0800000000000000
+      internalID: -4454149142360238919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_9
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 2012
+        width: 106
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea47cebb164968e90800000000000000
+      internalID: -7023763421352135506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_10
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1532
+        width: 106
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad10e05c07070fa70800000000000000
+      internalID: 8858704096682443226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_11
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1532
+        width: 106
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54ded8e39ef3f9f0800000000000000
+      internalID: -435724827704241060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_12
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1534
+        width: 106
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c93536911b963eb90800000000000000
+      internalID: -7213805968761334884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_13
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 1534
+        width: 105
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835a7b4991d167c20800000000000000
+      internalID: 3203780180627137848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_14
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1534
+        width: 105
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5e80f5b1d6b5580800000000000000
+      internalID: -8837349879458503247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1054
+        width: 106
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f16190b8935da70800000000000000
+      internalID: 8851043911982260120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_16
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 1053
+        width: 104
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4233d2c214b51c290800000000000000
+      internalID: -7871910338194754780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_17
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1053
+        width: 101
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a422f24fbbed000800000000000000
+      internalID: 62694102266956386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_18
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 1053
+        width: 97
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86632145867c752f0800000000000000
+      internalID: -984098742656158104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_19
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 1051
+        width: 97
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d5c26313eba4750800000000000000
+      internalID: 6290048948147871077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_20
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 572
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde4bdd7e45bfe730800000000000000
+      internalID: 4030639540243484379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_21
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 572
+        width: 95
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206aa498345f34730800000000000000
+      internalID: 3982296165940635138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_22
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 572
+        width: 96
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a118af9e25116380800000000000000
+      internalID: -8979872892008787550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_23
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 572
+        width: 95
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b87fb0ddd660090800000000000000
+      internalID: -8068640886231692394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_24
+      rect:
+        serializedVersion: 2
+        x: 2118
+        y: 572
+        width: 97
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05f7ff8edb4ca0d0800000000000000
+      internalID: -3410267398556093174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_25
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 92
+        width: 100
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3c8a468c5e7c1e0800000000000000
+      internalID: -2177519245965343797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_26
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 94
+        width: 102
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2acddb666788d9e0800000000000000
+      internalID: -1596377193936729557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: droplet walk_27
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 94
+        width: 105
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35df27aaba4cd8010800000000000000
+      internalID: 1192825717901163859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
