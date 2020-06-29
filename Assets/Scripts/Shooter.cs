@@ -22,6 +22,7 @@ public class Shooter : MonoBehaviour
         if (IsAttackerInLane())
         {
             cactusAnimator.SetBool("IsAttacking", true);
+            cactusAnimator.SetBool("IsAttacking", true);
         }
         else
         {
@@ -46,7 +47,6 @@ public class Shooter : MonoBehaviour
 
     private bool IsAttackerInLane()
     {
-        Debug.Log(myLaneSpawner);
         if (myLaneSpawner.transform.childCount <= 0)
         {
             return false;

@@ -5,37 +5,43 @@ using UnityEngine;
 public class Attacker : MonoBehaviour
 {
     [SerializeField] float attackerDamage = 20f;
-    float currentSpeed = 1f;
+    float currentSpeed;
 
+    private void Start()
+    {
+        currentSpeed = 1f;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Move(currentSpeed);
+        Debug.Log(currentSpeed);
     }
 
-    private void Move()
+    private void Move(float speed)
     {
-        transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
 
-    public void SetMovementSpeed(float speed)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        currentSpeed = speed;
-    }
+        Defender defender = other.GetComponent<Defender>();
+        if (defender != null)
+        {
+            currentSpeed = 0f;
+        }
 
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
+        //    var defender = other.GetComponent<Defender>();
+        //    var defenderHealth = other.GetComponent<Health>();
+        //    if (defender && defenderHealth)
+        //    {
 
-        //SetMovementSpeed(0);
-        //var defender = other.GetComponent<Defender>();
-        //var defenderHealth = other.GetComponent<Health>();
-        //if (defender && defenderHealth)
-        //{
-
-        //    defenderHealth.DealDamage(attackerDamage);
-        //    Destroy(gameObject);
+        //        defenderHealth.DealDamage(attackerDamage);
+        //        Destroy(gameObject);
+        //    }
         //}
-    //}
+    }
+
 
 }

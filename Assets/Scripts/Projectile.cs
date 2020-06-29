@@ -5,7 +5,6 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float projectileSpeed = 5f;
-    [SerializeField] float rotationSpeed = 90f;
     [SerializeField] float projectileDamage = 50f;
 
     // Update is called once per frame
