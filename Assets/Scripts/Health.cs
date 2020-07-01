@@ -5,18 +5,11 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float health = 100f;
-    [SerializeField] GameObject attackerDeathVFX;
-
-    Projectile projectile;
-
-    private void Start()
-    {
-        projectile = FindObjectOfType<Projectile>();
-    }
-
+    [SerializeField] GameObject deathVFX;
 
     public void DealDamage(float damage)
     {
+        LevelController level = FindObjectOfType<LevelController>();
         health -= damage;
 
         if(health <= 0)
@@ -26,10 +19,15 @@ public class Health : MonoBehaviour
         }
     }
 
+    public float GetHealth()
+    {
+        return health;
+    }
+
     private void TriggerDeathVFX()
     {
-        if (!attackerDeathVFX) { return; }
-        GameObject particleEffect = Instantiate(attackerDeathVFX, transform.position, transform.rotation);
+        if (!deathVFX) { return; }
+        GameObject particleEffect = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(particleEffect, 1f);
     }
 

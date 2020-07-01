@@ -6,42 +6,55 @@ public class Attacker : MonoBehaviour
 {
     [SerializeField] float attackerDamage = 20f;
     float currentSpeed;
+    Animator attackerAnim;
+    GameObject currentTarget;
 
+    private void Awake()
+    {
+        FindObjectOfType<LevelController>().CountAttackers();
+    }
+
+    private void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().DecrementAttackers();
+    }
     private void Start()
     {
+        attackerAnim = GetComponent<Animator>();
         currentSpeed = 1f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move(currentSpeed);
-        Debug.Log(currentSpeed);
+        UpdateAnimationState();
+        transform.Translate(Vector3.left * currentSpeed * Time.deltaTime);
+       
     }
 
-    private void Move(float speed)
+    public void SetMovementSpeed(float speed)
     {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        currentSpeed = speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void Attack(GameObject target)
     {
-        Defender defender = other.GetComponent<Defender>();
-        if (defender != null)
+        attackerAnim.SetBool("isAttacking", true);
+        currentTarget = target;
+    }
+
+    public void DealDamageToDefender(float amount)
+    {
+        if(!currentTarget) { return; }
+        currentTarget.GetComponent<Health>().DealDamage(amount);
+    }
+
+    public void UpdateAnimationState()
+    {
+        if (!currentTarget)
         {
-            currentSpeed = 0f;
+            attackerAnim.SetBool("isAttacking", false);
         }
-
-        //    var defender = other.GetComponent<Defender>();
-        //    var defenderHealth = other.GetComponent<Health>();
-        //    if (defender && defenderHealth)
-        //    {
-
-        //        defenderHealth.DealDamage(attackerDamage);
-        //        Destroy(gameObject);
-        //    }
-        //}
     }
-
 
 }

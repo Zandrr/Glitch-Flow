@@ -35,4 +35,25 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void GameOverScene()
+    {
+        SceneManager.LoadScene("Game Over");
+    }
+
+    IEnumerator DelayGameOverScene()
+    {
+        yield return new WaitForSeconds(sceneLoadWaitTime);
+        GameOverScene();
+    }
+
+    public void LoadGameOverSceneWithDelay()
+    {
+        StartCoroutine(DelayGameOverScene());
+    }
 }

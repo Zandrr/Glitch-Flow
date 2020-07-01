@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
 {
-    [SerializeField] Attacker attackerPrefab;
+    [SerializeField] Attacker[] attackersPrefab;
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 3f;
 
@@ -15,18 +16,28 @@ public class AttackerSpawner : MonoBehaviour
     {
         while (spawn)
         {
-            yield return new WaitForSeconds(Random.Range(minSpawnDelay, maxSpawnDelay));
+            yield return new WaitForSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay));
             SpawnAttacker();
         }
     }
 
+    public void StopSpawning()
+    {
+        spawn = false;
+    }
+
     private void SpawnAttacker()
     {
-        Attacker newAttacker = Instantiate(attackerPrefab,
+        var attackerIndex = UnityEngine.Random.Range(0, attackersPrefab.Length);
+        Spawn(attackersPrefab[attackerIndex]);
+    }
+
+    private void Spawn(Attacker attacker)
+    {
+        Attacker newAttacker = Instantiate(attacker,
             transform.position, transform.rotation) as Attacker;
 
         newAttacker.transform.parent = transform;
-        
     }
 
 
