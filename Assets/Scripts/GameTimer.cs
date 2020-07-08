@@ -8,13 +8,7 @@ public class GameTimer : MonoBehaviour
     [Tooltip("Our level timer in seconds")]
     [SerializeField] float levelTime = 10;
     bool levelFinished = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         GetComponent<Slider>().value = Time.timeSinceLevelLoad / levelTime;

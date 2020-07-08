@@ -14,5 +14,7 @@ public class HealthCollider : MonoBehaviour
         {
             FindObjectOfType<PlayerHealth>().ReducePlayerHealth(baseDamage);
         }
+
+        Destroy(other.gameObject);
     }
 }

@@ -12,7 +12,8 @@ public class SceneLoader : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       currentScene =  SceneManager.GetActiveScene().buildIndex;
+        Time.timeScale = 1;
+        currentScene =  SceneManager.GetActiveScene().buildIndex;
         if(currentScene == 0)
         {
             StartCoroutine(DelaySceneLoad());
@@ -23,6 +24,12 @@ public class SceneLoader : MonoBehaviour
     public void LoadNextScene()
     {
        SceneManager.LoadScene(currentScene + 1);
+    }
+
+    public void ReloadCurrentScene()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(currentScene);
     }
 
     IEnumerator DelaySceneLoad()
@@ -44,6 +51,16 @@ public class SceneLoader : MonoBehaviour
     public void GameOverScene()
     {
         SceneManager.LoadScene("Game Over");
+    }
+    public void LoadMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Start Screen");
+    }
+
+    public void OptionsScene()
+    {
+        SceneManager.LoadScene("Options Screen");
     }
 
     IEnumerator DelayGameOverScene()

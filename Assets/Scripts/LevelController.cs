@@ -5,13 +5,15 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
    [SerializeField] GameObject levelCompleteLabel;
-    float numAttackers;
+    [SerializeField] GameObject levelLostLabel;
+    float numAttackers = 0;
     AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         levelCompleteLabel.SetActive(false);
+        levelLostLabel.SetActive(false);
         GameTimer gameTimer = FindObjectOfType<GameTimer>();
     }
 
@@ -20,8 +22,12 @@ public class LevelController : MonoBehaviour
     {
         if (FindObjectOfType<GameTimer>().LevelFinished() && numAttackers == 0)
         {
-            Debug.Log("All enemies dead and game time up");
             StartCoroutine(HandleWinCondition());
+        }
+
+        if (IsLevelLost())
+        {
+            LevelLost();
         }
     }
 
@@ -42,6 +48,18 @@ public class LevelController : MonoBehaviour
         levelCompleteLabel.SetActive(true);
         yield return new WaitForSeconds(2f);
         FindObjectOfType<SceneLoader>().LoadNextScene();
+    }
+
+
+    private void LevelLost()
+    {
+        levelLostLabel.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    private bool IsLevelLost()
+    {
+        return FindObjectOfType<PlayerHealth>().GetPlayerHealth() <= 0;
     }
 
 }

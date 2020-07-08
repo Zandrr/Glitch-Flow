@@ -6,21 +6,15 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] int startingHealth = 100;
+    int startingHealth;
     Text playerHealthText;
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(PlayerPrefsController.GetDifficulty());
+        startingHealth = Mathf.RoundToInt(100 / PlayerPrefsController.GetDifficulty());
         playerHealthText = GetComponent<PlayerHealth>().GetComponent<Text>();
         UpdatePlayerHealthDisplay();
-    }
-
-    private void Update()
-    {
-        if (isGameOver())
-        {
-            GameOver();
-        }
     }
 
     private void UpdatePlayerHealthDisplay()
@@ -30,19 +24,16 @@ public class PlayerHealth : MonoBehaviour
 
     public void ReducePlayerHealth(int amount)
     {
-        startingHealth -= amount;
-        UpdatePlayerHealthDisplay();
+        if (startingHealth > 0)
+        {
+            startingHealth -= amount;
+            UpdatePlayerHealthDisplay();
+        }
     }
 
-    private void GameOver()
+    public int GetPlayerHealth()
     {
-
-        GetComponent<SceneLoader>().GameOverScene();
-    }
-
-    private bool isGameOver()
-    {
-        return startingHealth <= 0;
+        return startingHealth;
     }
 
 }

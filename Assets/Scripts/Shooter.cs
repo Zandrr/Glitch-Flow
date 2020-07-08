@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,11 +10,20 @@ public class Shooter : MonoBehaviour
 
     AttackerSpawner myLaneSpawner;
     Animator cactusAnimator;
+    GameObject projectileParent;
+    const string PROJECTILE_PARENT_NAME = "Projectiles";
     // Start is called before the first frame update
     private void Start()
     {
         cactusAnimator = GetComponent<Animator>();
         SetLaneSpawner();
+        CreateProjectileParent();
+    }
+
+    private void CreateProjectileParent()
+    {
+        projectileParent = GameObject.Find(PROJECTILE_PARENT_NAME);
+        if (!projectileParent) { projectileParent = new GameObject(PROJECTILE_PARENT_NAME); }
     }
 
     // Update is called once per frame
@@ -59,8 +69,7 @@ public class Shooter : MonoBehaviour
 
     public void CreateProjectile()
     {
-        Instantiate(projectile,
-            gun.transform.position,
-            transform.rotation);
+        GameObject newProjectile = Instantiate(projectile, gun.transform.position, transform.rotation) as GameObject;
+        newProjectile.transform.parent = projectileParent.transform;
     }
 }
